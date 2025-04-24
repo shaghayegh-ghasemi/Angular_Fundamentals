@@ -35,6 +35,16 @@ app-input-display {
     border-bottom: 1px solid #ccc;
 }
 
+.expensive {
+    font-weight: bold;
+    color: red;
+}
+
+.cheap {
+    font-weight: lighter;
+    color: green;
+}
+
 hr {
     width: 80%;
     border: none;

@@ -20,10 +20,10 @@
  </div>
  <hr>
 
- <!-- List Rendering with *ngFor -->
+ <!-- List Rendering with *ngFor and Dynamic Styling with *ngClass --> 
   <h2>Product List: </h2>
   <ul class="product-list">
-    <li *ngFor="let item of items" class="product-item">
+    <li *ngFor="let item of items" class="product-item" [ngClass]="{ 'expensive': item.price > 100, 'cheap':  item.price <= 100 }">
         {{item.name}} - ${{item.price}}
     </li>
   </ul>

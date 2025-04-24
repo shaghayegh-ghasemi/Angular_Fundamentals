@@ -4,10 +4,11 @@ import { LikeButtonComponent } from './like-button/like-button.component';
 import { InputDisplayComponent } from './input-display/input-display.component';
 import { NgIf } from '@angular/common';
 import { NgFor } from '@angular/common';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [ProfileCardComponent, LikeButtonComponent, InputDisplayComponent, NgIf, NgFor],
+  imports: [ProfileCardComponent, LikeButtonComponent, InputDisplayComponent, NgIf, NgFor, NgClass],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -27,5 +28,6 @@ export class AppComponent {
     {name: 'Mouse', price: 25},
     {name: 'Keyword', price: 75},
     {name: 'Coolpad', price: 100},
+    {name: 'Monitor', price: 425},
   ]
 }
