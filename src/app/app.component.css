@@ -1,0 +1,32 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+app-profile-card,
+app-like-button,
+app-input-display {
+    margin-bottom: 20px;
+}
+
+.extra-info-button {
+    margin-bottom: 2%;
+    background-color: rgb(81, 81, 228);
+    padding: 8px 16 px;
+    font-size: 16px;
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 5%;
+}
+
+hr {
+    width: 80%;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 24px 0;
+}

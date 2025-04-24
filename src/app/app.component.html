@@ -1,3 +1,21 @@
+<!-- Simple Profile Component -->
 <app-profile-card></app-profile-card>
+<hr>
+
+<!-- Interactive Like Button -->
 <app-like-button></app-like-button>
+<hr>
+
+<!-- Input Field and Displayshow -->
 <app-input-display></app-input-display>
+<hr>
+
+<!-- Conditional Display with *ngIf -->
+ <button (click)="toggleDetails()" class="extra-info-button">
+    {{showDetails ? 'Hide Details' : 'Show Details'}}
+ </button>
+
+ <div *ngIf="showDetails">
+    This is some extra information!
+ </div>
+ <hr>
