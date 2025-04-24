@@ -23,6 +23,18 @@ app-input-display {
     border-radius: 5%;
 }
 
+.product-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    width: 250px;
+}
+
+.product-item {
+    padding: 6px 0;
+    border-bottom: 1px solid #ccc;
+}
+
 hr {
     width: 80%;
     border: none;

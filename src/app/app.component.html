@@ -19,3 +19,11 @@
     This is some extra information!
  </div>
  <hr>
+
+ <!-- List Rendering with *ngFor -->
+  <h2>Product List: </h2>
+  <ul class="product-list">
+    <li *ngFor="let item of items" class="product-item">
+        {{item.name}} - ${{item.price}}
+    </li>
+  </ul>
