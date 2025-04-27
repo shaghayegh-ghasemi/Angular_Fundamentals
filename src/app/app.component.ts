@@ -2,14 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ProfileCardComponent } from "./profile-card/profile-card.component";
 import { LikeButtonComponent } from './like-button/like-button.component';
 import { InputDisplayComponent } from './input-display/input-display.component';
-import { NgIf } from '@angular/common';
-import { NgFor } from '@angular/common';
-import { NgClass } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [ProfileCardComponent, LikeButtonComponent, InputDisplayComponent, NgIf, NgFor, NgClass, RouterModule],
+  imports: [ProfileCardComponent, LikeButtonComponent, InputDisplayComponent, CommonModule, RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

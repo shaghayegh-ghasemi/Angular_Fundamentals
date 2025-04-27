@@ -7,6 +7,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { UserListComponent } from './users/user-list/user-list.component';
 import { UserAddComponent } from './users/user-add/user-add.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
+import { ItemListComponent } from './items/item-list/item-list.component';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -16,7 +17,8 @@ export const appConfig: ApplicationConfig = {
       { path: 'calculator', component: CalculatorComponent },
       { path: 'user-list', component: UserListComponent },
       { path: 'user-add', component: UserAddComponent },
-      { path: 'posts', component: PostListComponent }
+      { path: 'posts', component: PostListComponent },
+      { path: 'items', component: ItemListComponent },
     ]),
     provideHttpClient()  
   ]

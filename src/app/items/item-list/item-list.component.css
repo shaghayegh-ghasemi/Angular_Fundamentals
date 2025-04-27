@@ -1,0 +1,9 @@
+.popular {
+    font-weight: bold;
+    color: darkgreen;
+}
+
+.not-popular {
+    font-weight: lighter;
+    color: crimson;
+}
