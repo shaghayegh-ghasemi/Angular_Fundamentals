@@ -1,0 +1,14 @@
+<h2> Posts </h2>
+
+<div *ngIf="errorMessage; else showPosts">
+    <p style="color: red;"> {{ errorMessage }} </p>
+</div>
+
+<ng-template #showPosts>
+    <ul>
+        <li *ngFor="let post of posts">
+            <strong> {{ post.title }} </strong>
+            <p> {{ post.body }} </p>
+        </li>
+    </ul>
+</ng-template>
