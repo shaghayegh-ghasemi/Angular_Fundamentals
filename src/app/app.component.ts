@@ -5,14 +5,16 @@ import { InputDisplayComponent } from './input-display/input-display.component';
 import { NgIf } from '@angular/common';
 import { NgFor } from '@angular/common';
 import { NgClass } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [ProfileCardComponent, LikeButtonComponent, InputDisplayComponent, NgIf, NgFor, NgClass],
+  imports: [ProfileCardComponent, LikeButtonComponent, InputDisplayComponent, NgIf, NgFor, NgClass, RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit{
+  // Angular Assignment - part 1
   ngOnInit(): void {
     //  Basic Array operations 
 
@@ -110,4 +112,7 @@ export class AppComponent implements OnInit{
     {name: 'Coolpad', price: 100},
     {name: 'Monitor', price: 425},
   ]
+
+  // Angular Assignment - part 2
+
 }

@@ -6,6 +6,16 @@
     min-height: 100vh;
 }
 
+.title {
+    font-weight: bold;
+    font-size: larger;
+    width: 80%;
+    padding: 2%;
+    background-color: blanchedalmond;
+    justify-content: center;
+    border-radius: 2%;
+}
+
 app-profile-card,
 app-like-button,
 app-input-display {
@@ -51,4 +61,12 @@ hr {
     height: 1px;
     background-color: #ccc;
     margin: 24px 0;
+}
+
+.products-router {
+    text-decoration: none;
+    margin-top: 20px; 
+    color: #333; 
+    font-size: larger;
+    font-weight: bold;
 }

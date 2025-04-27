@@ -1,0 +1,9 @@
+<div *ngFor="let product of products">
+    <app-product-card
+    [product] = "product"
+    (addToCart) = "onAddToCart($event)"
+    >
+    </app-product-card>
+</div>
+
+<p *ngIf="addedMessage" class="added-message"> {{addedMessage}} </p>
