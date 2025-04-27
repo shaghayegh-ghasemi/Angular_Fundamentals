@@ -1,0 +1,19 @@
+<h2> Blog Posts </h2>
+
+<select (change)="onCategoryChange($event)">
+    <option value=""> All </option>
+    <option value="Angular"> Angular </option>
+    <option value="React"> React </option>
+    <option value="Comparison"> Comparison </option>
+    <option value="Frontend"> Frontend </option>
+    <option value="Backend"> Backend </option>
+</select>
+
+<hr>
+
+<ul>
+    <li *ngFor="let blog of filteredBlogs">
+        <strong> {{blog.title}} </strong> (Category: {{ blog.category }})
+        <button (click)="viewBlog(blog.id)"> View Details </button>
+    </li>
+</ul>
