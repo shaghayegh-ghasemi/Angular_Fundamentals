@@ -1,0 +1,16 @@
+<h2>Real-Time Data Stream</h2>
+
+<div>
+    <button (click)="start()"> Start Streaming </button>
+    <button (click)="stop()"> Stop Streaming </button>
+</div>
+
+<br>
+
+<div *ngIf="number as randomNum">
+    <p>Latest Number: {{randomNum | async}} </p>
+</div>
+
+<div *ngIf=" !isStreaming && numbers.length > 0">
+    <p>Average: {{ average | number:'1.0-2' }} </p>
+</div>

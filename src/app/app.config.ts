@@ -11,6 +11,7 @@ import { ItemListComponent } from './items/item-list/item-list.component';
 import { BlogListComponent } from './blog/blog-list/blog-list.component';
 import { BlogDetailComponent } from './blog/blog-detail/blog-detail.component';
 import { TodoListComponent } from './todo/todo-list/todo-list.component';
+import { DataDisplayComponent } from './data/data-display/data-display.component';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -25,6 +26,7 @@ export const appConfig: ApplicationConfig = {
       { path: 'blog', component: BlogListComponent },
       { path: 'blog/:id', component: BlogDetailComponent },
       { path: 'todo', component: TodoListComponent },
+      { path: 'data', component: DataDisplayComponent },
     ]),
     provideHttpClient()  
   ]
