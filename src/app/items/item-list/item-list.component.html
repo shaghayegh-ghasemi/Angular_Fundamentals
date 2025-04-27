@@ -9,9 +9,21 @@
         <p>Price: {{ item.price | currency:'CAD' }} </p>
         <p>Release Date: {{ item.releaseDate | date:'longDate' }} </p>
         <p>Rating: {{ item.rating | percent }} </p>
+        <p>Description: {{ item.description | truncate:25 }} </p>
 
         <p [ngClass]="{ 'popular': item.rating >= 0.8, 'not-popular': item.rating < 0.8 }">
-            {{ item.rating >= 0.8 ? 'Popular' : 'Not Popular' }}
+            {{ item.rating >= 0.8 ? 'Best Seller' : 'Not Popular' }}
         </p>
+
+        <p appHighlight="lightblue"> Hover here to see the highlight (testing the cutom directive) </p>
+
+        <div *appIfLoggedIn="isLogegdIn">
+            <textarea placeholder="Leave your comment ... "></textarea>
+            <button> Submit </button>
+        </div>
+
+        <div *appIfLoggedIn="!isLogegdIn">
+            <p style="color: red;"> Please log in to leave a comment! </p>
+        </div>
     </li>
 </ul>
