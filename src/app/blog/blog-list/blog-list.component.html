@@ -1,6 +1,6 @@
 <h2> Blog Posts </h2>
 
-<select (change)="onCategoryChange($event)">
+<select (change)="onCategoryChange($event)" class="category-dropdown">
     <option value=""> All </option>
     <option value="Angular"> Angular </option>
     <option value="React"> React </option>
@@ -11,9 +11,11 @@
 
 <hr>
 
-<ul>
-    <li *ngFor="let blog of filteredBlogs">
-        <strong> {{blog.title}} </strong> (Category: {{ blog.category }})
+<ul class="blog-list">
+    <li *ngFor="let blog of filteredBlogs" class="blog-item">
+        <div class="blog-info">
+            <strong> {{ blog.title }} </strong> (Category: {{ blog.category }})
+        </div>
         <button (click)="viewBlog(blog.id)"> View Details </button>
     </li>
 </ul>

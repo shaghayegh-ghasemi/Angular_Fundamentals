@@ -1,8 +1,10 @@
-<h2> {{ blog?.title }} </h2>
+<div class="blog-detail">
+    <h2> {{ blog?.title }} </h2>
 
-<p><em> Category: {{ blog?.category }} </em></p>
+    <p><em> Category: {{ blog?.category }} </em></p>
+    
+    <p> {{ blog?.content }} </p>
+</div>
 
-<p> {{ blog?.content }} </p>
-
-<a routerLink="/blog"> Back to blog list </a>
+<a routerLink="/blog" class="back-link"> Back to blog list </a>    
 
