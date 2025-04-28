@@ -1,13 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { ProfileCardComponent } from "./profile-card/profile-card.component";
-import { LikeButtonComponent } from './like-button/like-button.component';
-import { InputDisplayComponent } from './input-display/input-display.component';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [ProfileCardComponent, LikeButtonComponent, InputDisplayComponent, CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -95,22 +92,7 @@ export class AppComponent implements OnInit{
 
   title = 'angular-practice';
 
-  // Conditional Display with *ngIf
-  showDetails: boolean = false;
-
-  toggleDetails(): void {
-    this.showDetails = !this.showDetails;
-  }
-
-  // List Rendering with *ngFor
-  items = [
-    {name: 'Laptop', price: 1200},
-    {name: 'Mouse', price: 25},
-    {name: 'Keyword', price: 75},
-    {name: 'Coolpad', price: 100},
-    {name: 'Monitor', price: 425},
-  ]
-
-  // Angular Assignment - part 2
+  isPart1Open = false;
+  isPart2Open = false;
 
 }

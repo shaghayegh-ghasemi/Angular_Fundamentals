@@ -1,4 +1,12 @@
-<h2>Add New User</h2>
+<div class="user-add-header">
+    <h2>Add New User</h2>
+</div>
+
 
 <input type="text" [(ngModel)]="newUser" placeholder="Enter user name">
-<button (click)="addUser()"> Add User </button>
+<button (click)="addUser()" class="add-user-btn"> Add User </button>
+
+
+<div class="user-add-header">
+    <button (click)="goBack()" > Back to User List</button>
+</div>

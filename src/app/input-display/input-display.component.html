@@ -2,3 +2,24 @@
     <input type="text" (input)="updateText($event)" placeholder="Type something ...">
     <p>You typed:  {{inputText}} </p>
 </div>
+
+<hr>
+
+<!-- Conditional Display with *ngIf -->
+<button (click)="toggleDetails()" class="extra-info-button">
+    {{showDetails ? 'Hide Details' : 'Show Details'}}
+ </button>
+
+ <div *ngIf="showDetails">
+    This is some extra information!
+ </div>
+ 
+ <hr>
+
+ <!-- List Rendering with *ngFor and Dynamic Styling with *ngClass --> 
+<h2>Product List: </h2>
+<ul class="product-list">
+<li *ngFor="let item of items" class="product-item" [ngClass]="{ 'expensive': item.price > 100, 'cheap':  item.price <= 100 }">
+    {{item.name}} - ${{item.price}}
+</li>
+</ul>

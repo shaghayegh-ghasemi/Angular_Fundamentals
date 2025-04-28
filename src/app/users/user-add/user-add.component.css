@@ -1,0 +1,60 @@
+
+.user-add-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+h2 {
+    color: #1976d2;
+    margin: 0;
+}
+
+
+.user-add-header button {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.user-add-header button:hover {
+    background-color: #145ea8;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button.add-user-btn {
+    background-color: rgba(0, 128, 0, 0.712);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 5px;
+}
+
+button.add-user-btn:hover {
+    background-color: #145ea8;
+}
+

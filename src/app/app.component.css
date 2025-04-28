@@ -22,46 +22,7 @@ app-input-display {
     margin-bottom: 20px;
 }
 
-.extra-info-button {
-    margin-bottom: 2%;
-    background-color: rgb(81, 81, 228);
-    padding: 8px 16 px;
-    font-size: 16px;
-    border: none;
-    width: 200px;
-    height: 30px;
-    border-radius: 5%;
-}
 
-.product-list {
-    list-style: none;
-    padding: 0;
-    text-align: left;
-    width: 250px;
-}
-
-.product-item {
-    padding: 6px 0;
-    border-bottom: 1px solid #ccc;
-}
-
-.expensive {
-    font-weight: bold;
-    color: red;
-}
-
-.cheap {
-    font-weight: lighter;
-    color: green;
-}
-
-hr {
-    width: 80%;
-    border: none;
-    height: 1px;
-    background-color: #ccc;
-    margin: 24px 0;
-}
 
 .router-link {
     text-decoration: none;
@@ -69,4 +30,67 @@ hr {
     color: #333; 
     font-size: larger;
     font-weight: bold;
+}
+
+.navbar {
+    background-color: #1976d2;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center; 
+    gap: 40px;
+    color: white;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    align-items: center;
+}
+
+.nav-item {
+    position: relative;
+}
+
+
+.nav-title {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: larger;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    min-width: 200px;
+}
+
+.dropdown-link {
+    display: block;
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.dropdown-link:hover {
+    background-color: #eeeeee;
+    border-radius: 4px;
+}
+
+.page-content {
+    padding-top: 80px; 
+    max-width: 800px;
+    margin: 0 auto; 
+    padding-left: 20px;
+    padding-right: 20px;
 }

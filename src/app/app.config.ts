@@ -12,11 +12,17 @@ import { BlogListComponent } from './blog/blog-list/blog-list.component';
 import { BlogDetailComponent } from './blog/blog-detail/blog-detail.component';
 import { TodoListComponent } from './todo/todo-list/todo-list.component';
 import { DataDisplayComponent } from './data/data-display/data-display.component';
+import { ProfileCardComponent } from './profile-card/profile-card.component';
+import { LikeButtonComponent } from './like-button/like-button.component';
+import { InputDisplayComponent } from './input-display/input-display.component';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter([
+      { path: 'profile-card', component: ProfileCardComponent },
+      { path: 'like-button', component: LikeButtonComponent },
+      { path: 'input-display', component: InputDisplayComponent },
       { path: 'products', component: ProductListComponent },
       { path: 'calculator', component: CalculatorComponent },
       { path: 'user-list', component: UserListComponent },

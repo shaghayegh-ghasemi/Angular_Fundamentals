@@ -1,69 +1,34 @@
-<p class="title">Angular Assignment - part 1</p>
+<nav class="navbar">
 
-<!-- Simple Profile Component -->
-<app-profile-card></app-profile-card>
-<hr>
+   <!-- Angular Part 1 -->
+   <div class="nav-item" (mouseenter)="isPart1Open = true" (mouseleave)="isPart1Open = false">
+     <span class="nav-title">Angular Part 1</span>
+     <div *ngIf="isPart1Open" class="dropdown">
+       <a routerLink="/profile-card" class="dropdown-link">Profile Card</a>
+       <a routerLink="/like-button" class="dropdown-link">Like Button</a>
+       <a routerLink="/input-display" class="dropdown-link">Input Display</a>
+       <!-- <a routerLink="/conditional-display" class="dropdown-link">Conditional Display</a>
+       <a routerLink="/list-rendering" class="dropdown-link">List Rendering (ngFor)</a> -->
+     </div>
+   </div>
+ 
+   <!-- Angular Part 2 -->
+   <div class="nav-item" (mouseenter)="isPart2Open = true" (mouseleave)="isPart2Open = false">
+     <span class="nav-title">Angular Part 2</span>
+     <div *ngIf="isPart2Open" class="dropdown">
+       <a routerLink="/products" class="dropdown-link">Product Display</a>
+       <a routerLink="/calculator" class="dropdown-link">Calculator</a>
+       <a routerLink="/user-list" class="dropdown-link">User Management</a>
+       <a routerLink="/posts" class="dropdown-link">Posts from REST API</a>
+       <a routerLink="/items" class="dropdown-link">Items Display (Pipes/Directives)</a>
+       <a routerLink="/blog" class="dropdown-link">Simple Blog App</a>
+       <a routerLink="/todo" class="dropdown-link">TODO App</a>
+       <a routerLink="/data" class="dropdown-link">Real-Time Data Stream</a>
+     </div>
+   </div>
 
-<!-- Interactive Like Button -->
-<app-like-button></app-like-button>
-<hr>
-
-<!-- Input Field and Displayshow -->
-<app-input-display></app-input-display>
-<hr>
-
-<!-- Conditional Display with *ngIf -->
- <button (click)="toggleDetails()" class="extra-info-button">
-    {{showDetails ? 'Hide Details' : 'Show Details'}}
- </button>
-
- <div *ngIf="showDetails">
-    This is some extra information!
- </div>
- <hr>
-
- <!-- List Rendering with *ngFor and Dynamic Styling with *ngClass --> 
-  <h2>Product List: </h2>
-  <ul class="product-list">
-    <li *ngFor="let item of items" class="product-item" [ngClass]="{ 'expensive': item.price > 100, 'cheap':  item.price <= 100 }">
-        {{item.name}} - ${{item.price}}
-    </li>
-  </ul>
-
-<p class="title">Angular Assignment - part 2</p>
-
-
-<!-- Component Communication using @Input and @Output  -->
-<a class="router-link" routerLink="/products"> Products </a>
-<hr>
-
-<!-- One-way and Two-way Binding -->
-<a class="router-link" routerLink="/calculator"> Simple Calculator</a>
-<hr>
-
-<!-- Data Sharing using a Service -->
-<a class="router-link" routerLink="/user-list"> User List </a>
-<a class="router-link" routerLink="/user-add"> User Add </a>
-<hr>
-
-<!-- Integrate an External API using a Service  -->
-<a class="router-link" routerLink="/posts"> Posts - REST API </a>
-<hr>
-
-<!-- Use Inbuilt Angular Pipe and Directive -->
-<a class="router-link" routerLink="/items"> Items </a>
-<hr>
-
-<!-- Angular Router - Blog App  -->
-<a class="router-link" routerLink="/blog"> Simple Blog App </a>
-<hr>
-
-<!-- TODO Application  -->
-<a class="router-link" routerLink="/todo"> TODO Application </a>
-<hr>
-
-<!-- Real-time Data Stream  -->
-<a class="router-link" routerLink="/data"> Data Stream </a>
-<hr>
-
-<router-outlet></router-outlet>
+ </nav>
+ 
+<div class="page-content">
+  <router-outlet></router-outlet>
+</div>

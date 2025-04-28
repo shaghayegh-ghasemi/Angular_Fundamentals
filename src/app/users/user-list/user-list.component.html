@@ -1,4 +1,6 @@
-<h2>User List</h2>
+<div class="user-management-header">
+    <h2> User Management </h2>
+</div>
 
 <ul>
     <li *ngFor="let user of usersObservable | async; let i = index">
@@ -6,3 +8,7 @@
         <button (click)="deleteUser(i)"> Delete </button>
     </li>
 </ul>
+
+<div class="user-management-header">
+    <button (click)="goToAddUser()"> Add New User </button>
+</div>

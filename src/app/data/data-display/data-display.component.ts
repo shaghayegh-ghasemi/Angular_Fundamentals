@@ -38,7 +38,7 @@ export class DataDisplayComponent {
     if (this.numbers.length === 0) return 0;
     const sum = this.numbers.reduce((a, b) => a + b, 0);
     const avg = sum / this.numbers.length;
-    console.log(this.numbers);
+    // console.log(this.numbers);cls
     this.numbers = [];
     return avg;
   }

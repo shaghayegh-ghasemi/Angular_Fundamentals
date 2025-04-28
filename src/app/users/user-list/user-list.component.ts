@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserService } from '../../services/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-list',
@@ -10,7 +11,7 @@ import { UserService } from '../../services/user.service';
 })
 export class UserListComponent {
 
-  constructor(private userService: UserService) {}
+  constructor(private userService: UserService, private router: Router) {}
 
   get usersObservable() {
     return this.userService.usersObservable;
@@ -18,5 +19,9 @@ export class UserListComponent {
 
   deleteUser(index: number){
     this.userService.deleteUser(index)
+  }
+
+  goToAddUser() {
+    this.router.navigate(['/user-add'])
   }
 }
