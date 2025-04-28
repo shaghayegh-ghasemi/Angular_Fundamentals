@@ -84,11 +84,9 @@ It is structured as a single Angular project with multiple components.
 
 ## Demo
 
-You can access a live demo version soon at:
+You can access a live demo version at:
 
-```
-
-```
+> **[Watch Demo](https://youtu.be/L-fflFTJWg8?si=ET1fQ3L2F3oD6vnQ)**
 
 
 ---
